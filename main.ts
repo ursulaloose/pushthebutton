@@ -1,7 +1,15 @@
 controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (randomPick == 0) {
+        info.changeScoreBy(1)
+        info.startCountdown(26)
+    }
     generate()
 })
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (randomPick == 0) {
+        info.changeScoreBy(1)
+        info.startCountdown(26)
+    }
     generate()
 })
 function generate () {
